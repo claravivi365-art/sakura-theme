@@ -1,0 +1,67 @@
+/**
+ * Sakura Transparent Theme - by ChatGPT 🌸
+ */
+
+:root {
+  --background-image: url("https://images.unsplash.com/photo-1522383225653-ed111181a951");
+  --background-blur: 12px;
+  --background-brightness: 0.6;
+
+  --accentcolor: 255, 182, 193;
+  --transparencycolor: 0, 0, 0;
+  --transparencyalpha: 0.4;
+
+  --messagetransparency: 0.2;
+  --guildchanneltransparency: 0.3;
+  --chatinputtransparency: 0.2;
+
+  --font: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  background: transparent !important;
+}
+
+.appMount-2yBXZl {
+  background: transparent !important;
+}
+
+/* Blur + image */
+.bg-1QIAus {
+  background-image: var(--background-image) !important;
+  background-size: cover;
+  filter: blur(var(--background-blur)) brightness(var(--background-brightness));
+}
+
+/* Panels */
+.container-2cd8Mz,
+.sidebar-1tnWFu,
+.chat-2ZfjoI {
+  background: rgba(var(--transparencycolor), var(--transparencyalpha)) !important;
+}
+
+/* Messages */
+.message-2CShn3 {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin: 4px 0;
+  padding: 6px;
+}
+
+/* Inputs */
+.scrollableContainer-15eg7h {
+  background: rgba(255, 182, 193, 0.1) !important;
+  border-radius: 12px;
+}
+
+/* Buttons accent */
+.button-38aScr {
+  background-color: rgba(255, 182, 193, 0.3) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 182, 193, 0.4);
+  border-radius: 10px;
+}
